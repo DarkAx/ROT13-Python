@@ -9,7 +9,6 @@ def rot(text, num, encrypt=False): # The default is decrypting, To encrypt just 
                 result+=A[(A.index(i)+num) % 26]
             else:
                 result+=i
-        return result
     
     else:
         for i in text:
@@ -19,4 +18,4 @@ def rot(text, num, encrypt=False): # The default is decrypting, To encrypt just 
                 result+=A[(A.index(i)-num) % 26]
             else:
                 result+=i
-        return result
+    return result
