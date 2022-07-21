@@ -1,9 +1,14 @@
 # ROT-Python
 Simple and readable python code that encrypt or decrypt for any ROT cipher (ROT 1 to ROT 25).
 
-## Usage
-The default is decrypting.
 
-To decrypt just pass a string and the number of rotations like this example: print(rot('sultan',13))
+### ``ROT("text", num)`` where num is 1 - 25
 
-To encrypt, just pass a "True" argument to the function like this example: print(rot('sultan',13,True))
+### After downloading the file, create a new python file and write:
+    from ROT import *
+     
+    print(ROT("text", num))
+
+###  To decrypt just pass True argument to the function call; such as this:
+		
+    ``print(ROT("sultan", 13, True))`` This will encrypt the text to ROT13 cipher.
