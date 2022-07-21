@@ -9,7 +9,7 @@ Simple and readable python code that encrypt or decrypt for any ROT cipher (ROT 
      
     print(ROT("text", num))
 
-###  To decrypt just pass True argument to the function call; such as this:
+###  To encrypt just pass True argument to the function call; such as this:
 		
     print(ROT("sultan", 13, True)) 
 ### This will encrypt the text to ROT13 cipher.
