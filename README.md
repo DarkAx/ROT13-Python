@@ -1,5 +1,5 @@
 # ROT-Python
-Simple and readable python code that encrypt or decrypt any ROT (ROT 1 to ROT 25) cipher.
+Simple and readable python code that encrypt or decrypt any ROT 1 to ROT 25 cipher.
 
 
 ### ``ROT("text", num)`` where num is 1 - 25
