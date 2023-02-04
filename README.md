@@ -1,8 +1,8 @@
-# ROT-Python
+# ROT Python
 Simple and readable python code that encrypt or decrypt any ROT 1 to ROT 25 cipher.
 
 
-### ``ROT("text", num)`` where num is 1 - 25
+### ``ROT("string", integer)`` where integer is in range 1 - 25
 
 ### After downloading the file, create a new python file and write:
     from ROT import *
