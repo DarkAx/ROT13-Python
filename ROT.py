@@ -15,18 +15,18 @@ def ROT(text, num, encrypt=False): # where num is 1 - 25
 		if encrypt:
 			
 			if i.islower():
-				result+=a[(a.index(i)-num) % 26]
+				result+=a[(a.index(i)+num) % 26]
 			elif i.isupper():
-				result+=A[(A.index(i)-num) % 26]
+				result+=A[(A.index(i)+num) % 26]
 			else:
 				result+=i
 		
 		else:
 
 			if i.islower():
-				result+=a[(a.index(i)+num) % 26]
+				result+=a[(a.index(i)-num) % 26]
 			elif i.isupper():
-				result+=A[(A.index(i)+num) % 26]
+				result+=A[(A.index(i)-num) % 26]
 			else:
 				 result+=i
 
