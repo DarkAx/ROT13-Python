@@ -12,22 +12,15 @@ def ROT(text, num, encrypt=False): # where num is 1 - 25
 	a=[chr(i) for i in range(97,123)]; A=[chr(i) for i in range(65,91)]; result=""
 
 	for i in text:
-		if encrypt:
+	    
+		if not encrypt:
+		    num = -num
 			
-			if i.islower():
+		if i.islower():
 				result+=a[(a.index(i)+num) % 26]
-			elif i.isupper():
+		elif i.isupper():
 				result+=A[(A.index(i)+num) % 26]
-			else:
-				result+=i
-		
 		else:
-
-			if i.islower():
-				result+=a[(a.index(i)-num) % 26]
-			elif i.isupper():
-				result+=A[(A.index(i)-num) % 26]
-			else:
-				 result+=i
-
+				result+=i
+				
 	return result
